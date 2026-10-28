@@ -13,7 +13,7 @@ st.set_page_config(
 # ------------------------------------------------------------------------------
 if "players" not in st.session_state:
     st.session_state.players = [
-        "yuka.", "ミック", "らいせ", "くみえもん", "タルト", "らむね", "れい", "四季" ,"しらす" ,"もふもふ" ,"がらす" ,"リュウ" ,"つくし" ,"すぷわむる"
+        "yuka.", "ミック", "らいせ", "くみえもん", "タルト", "らむね", "れい", "四季" ,"しらす" ,"もふもふ" ,"がらす" ,"リュウ" ,"つくし" ,"すぷわむる" ,"N/A"
     ]
 
 if "matches" not in st.session_state:
@@ -50,34 +50,68 @@ if "matches" not in st.session_state:
 
         # 第2回大会
         #勝者サイド 1回戦
-        {"tournament": "第2回 プロセカ大会", "bracket": "勝者サイド", "stage": "1回戦", "winner": "yuka.", "loser": "しらす", "score": "2-0", "mvp": "yuka.", "match_code": "#W1-1"},
-        {"tournament": "第2回 プロセカ大会", "bracket": "勝者サイド", "stage": "1回戦", "winner": "もふもふ", "loser": "がらす", "score": "2-0", "mvp": "もふもふ", "match_code": "#W1-2"},
-        {"tournament": "第2回 プロセカ大会", "bracket": "勝者サイド", "stage": "1回戦", "winner": "タルト", "loser": "リュウ", "score": "2-0", "mvp": "タルト", "match_code": "#W1-3"},
-        {"tournament": "第2回 プロセカ大会", "bracket": "勝者サイド", "stage": "1回戦", "winner": "すぷわむる", "loser": "つくし", "score": "1-2", "mvp": "すぷわむる", "match_code": "#W1-4"},
+        {"tournament": "過去のプロセカ大会第1回", "bracket": "勝者サイド", "stage": "1回戦", "winner": "yuka.", "loser": "しらす", "score": "2-0", "mvp": "yuka.", "match_code": "#W1-1"},
+        {"tournament": "過去のプロセカ大会第1回", "bracket": "勝者サイド", "stage": "1回戦", "winner": "もふもふ", "loser": "がらす", "score": "2-0", "mvp": "もふもふ", "match_code": "#W1-2"},
+        {"tournament": "過去のプロセカ大会第1回", "bracket": "勝者サイド", "stage": "1回戦", "winner": "タルト", "loser": "リュウ", "score": "2-0", "mvp": "タルト", "match_code": "#W1-3"},
+        {"tournament": "過去のプロセカ大会第1回", "bracket": "勝者サイド", "stage": "1回戦", "winner": "すぷわむる", "loser": "つくし", "score": "1-2", "mvp": "すぷわむる", "match_code": "#W1-4"},
 
         # 勝者サイド 準決勝
-        {"tournament": "第2回 プロセカ大会", "bracket": "勝者サイド", "stage": "準決勝", "winner": "yuka.", "loser": "もふもふ", "score": "2-0", "mvp": "yuka.", "match_code": "#W2-1"},
-        {"tournament": "第2回 プロセカ大会", "bracket": "勝者サイド", "stage": "準決勝", "winner": "すぷわむる", "loser": "タルト", "score": "2-1", "mvp": "すぷわむる", "match_code": "#W2-2"},
+        {"tournament": "過去のプロセカ大会第1回", "bracket": "勝者サイド", "stage": "準決勝", "winner": "yuka.", "loser": "もふもふ", "score": "2-0", "mvp": "yuka.", "match_code": "#W2-1"},
+        {"tournament": "過去のプロセカ大会第1回", "bracket": "勝者サイド", "stage": "準決勝", "winner": "すぷわむる", "loser": "タルト", "score": "2-1", "mvp": "すぷわむる", "match_code": "#W2-2"},
                 
         # 勝者サイド 決勝
-        {"tournament": "第2回 プロセカ大会", "bracket": "勝者サイド", "stage": "決勝", "winner": "yuka.", "loser": "すぷわむる", "score": "3-0", "mvp": "yuka.", "match_code": "#W3-1"},
+        {"tournament": "過去のプロセカ大会第1回", "bracket": "勝者サイド", "stage": "決勝", "winner": "yuka.", "loser": "すぷわむる", "score": "3-0", "mvp": "yuka.", "match_code": "#W3-1"},
 
         # グランドファイナル
-        {"tournament": "第2回 プロセカ大会", "bracket": "勝者サイド", "stage": "グランドファイナル", "winner": "yuka.", "loser": "すぷわむる", "score": "3-1", "mvp": "yuka.", "match_code": "#W4-1"},
+        {"tournament": "過去のプロセカ大会第1回", "bracket": "勝者サイド", "stage": "グランドファイナル", "winner": "yuka.", "loser": "すぷわむる", "score": "3-1", "mvp": "yuka.", "match_code": "#W4-1"},
 
         # 敗者サイド 1回戦
-        {"tournament": "第2回 プロセカ大会", "bracket": "敗者サイド", "stage": "1回戦", "winner": "しらす", "loser": "がらす", "score": "2-1", "mvp": "しらす", "match_code": "#L1-1"},
-        {"tournament": "第2回 プロセカ大会", "bracket": "敗者サイド", "stage": "1回戦", "winner": "つくし", "loser": "リュウ", "score": "0-2", "mvp": "つくし", "match_code": "#L1-2"},
+        {"tournament": "過去のプロセカ大会第1回", "bracket": "敗者サイド", "stage": "1回戦", "winner": "しらす", "loser": "がらす", "score": "2-1", "mvp": "しらす", "match_code": "#L1-1"},
+        {"tournament": "過去のプロセカ大会第1回", "bracket": "敗者サイド", "stage": "1回戦", "winner": "つくし", "loser": "リュウ", "score": "0-2", "mvp": "つくし", "match_code": "#L1-2"},
                 
         # 敗者サイド 2回戦
-        {"tournament": "第2回 プロセカ大会", "bracket": "敗者サイド", "stage": "2回戦", "winner": "タルト", "loser": "しらす", "score": "0-2", "mvp": "タルト", "match_code": "#L2-1"},
-        {"tournament": "第2回 プロセカ大会", "bracket": "敗者サイド", "stage": "2回戦", "winner": "つくし", "loser": "もふもふ", "score": "0-2", "mvp": "つくし", "match_code": "#L2-2"},
+        {"tournament": "過去のプロセカ大会第1回", "bracket": "敗者サイド", "stage": "2回戦", "winner": "タルト", "loser": "しらす", "score": "0-2", "mvp": "タルト", "match_code": "#L2-1"},
+        {"tournament": "過去のプロセカ大会第1回", "bracket": "敗者サイド", "stage": "2回戦", "winner": "つくし", "loser": "もふもふ", "score": "0-2", "mvp": "つくし", "match_code": "#L2-2"},
                 
         # 敗者サイド 準決勝
-        {"tournament": "第2回 プロセカ大会", "bracket": "敗者サイド", "stage": "準決勝", "winner": "タルト", "loser": "つくし", "score": "3-1", "mvp": "らいせ", "match_code": "#L3-1"},
+        {"tournament": "過去のプロセカ大会第1回", "bracket": "敗者サイド", "stage": "準決勝", "winner": "タルト", "loser": "つくし", "score": "3-1", "mvp": "らいせ", "match_code": "#L3-1"},
                 
         # 敗者サイド 決勝
-        {"tournament": "第2回 プロセカ大会", "bracket": "敗者サイド", "stage": "決勝", "winner": "すぷわむる", "loser": "タルト", "score": "0-3", "mvp": "すぷわむる", "match_code": "#L4-1"},
+        {"tournament": "過去のプロセカ大会第1回", "bracket": "敗者サイド", "stage": "決勝", "winner": "すぷわむる", "loser": "タルト", "score": "0-3", "mvp": "すぷわむる", "match_code": "#L4-1"},
+
+        # 「過去のプロセカ大会第2回」の試合データ一覧
+        # --- 🟠 勝者サイド ---
+        # 1回戦
+        {"tournament": "過去のプロセカ大会第2回", "bracket": "勝者サイド", "stage": "1回戦", "winner": "yuka.", "loser": "がらす", "score": "0-0", "mvp": "yuka.", "match_code": "#W1-1"},
+        {"tournament": "過去のプロセカ大会第2回", "bracket": "勝者サイド", "stage": "1回戦", "winner": "リュウ", "loser": "つくし", "score": "0-DQ", "mvp": "リュウ", "match_code": "#W1-2"},
+        {"tournament": "過去のプロセカ大会第2回", "bracket": "勝者サイド", "stage": "1回戦", "winner": "タルト", "loser": "四季", "score": "2-0", "mvp": "タルト", "match_code": "#W1-3"},
+        {"tournament": "過去のプロセカ大会第2回", "bracket": "勝者サイド", "stage": "1回戦", "winner": "らいせ", "loser": "しらす", "score": "2-0", "mvp": "らいせ", "match_code": "#W1-4"},
+        
+        # 準決勝
+        {"tournament": "過去のプロセカ大会第2回", "bracket": "勝者サイド", "stage": "準決勝", "winner": "yuka.", "loser": "リュウ", "score": "2-0", "mvp": "yuka.", "match_code": "#W2-1"},
+        {"tournament": "過去のプロセカ大会第2回", "bracket": "勝者サイド", "stage": "準決勝", "winner": "タルト", "loser": "らいせ", "score": "2-0", "mvp": "タルト", "match_code": "#W2-2"},
+        
+        # 勝者サイド決勝
+        {"tournament": "過去のプロセカ大会第2回", "bracket": "勝者サイド", "stage": "決勝", "winner": "yuka.", "loser": "タルト", "score": "3-1", "mvp": "yuka.", "match_code": "#W3-1"},
+
+        # --- 🔵 敗者サイド ---
+        # 1回戦
+        {"tournament": "過去のプロセカ大会第2回", "bracket": "敗者サイド", "stage": "1回戦", "winner": "がらす", "loser": "N/A", "score": "0-DQ", "mvp": "がらす", "match_code": "#L1-1"},
+        {"tournament": "過去のプロセカ大会第2回", "bracket": "敗者サイド", "stage": "1回戦", "winner": "しらす", "loser": "四季", "score": "2-0", "mvp": "しらす", "match_code": "#L1-2"},
+        
+        # 2回戦
+        {"tournament": "過去のプロセカ大会第2回", "bracket": "敗者サイド", "stage": "2回戦", "winner": "らいせ", "loser": "がらす", "score": "2-0", "mvp": "らいせ", "match_code": "#L2-1"},
+        {"tournament": "過去のプロセカ大会第2回", "bracket": "敗者サイド", "stage": "2回戦", "winner": "リュウ", "loser": "しらす", "score": "2-0", "mvp": "リュウ", "match_code": "#L2-2"},
+        
+        # 準決勝
+        {"tournament": "過去のプロセカ大会第2回", "bracket": "敗者サイド", "stage": "準決勝", "winner": "らいせ", "loser": "リュウ", "score": "3-1", "mvp": "らいせ", "match_code": "#L3-1"},
+        
+        # 決勝
+        {"tournament": "過去のプロセカ大会第2回", "bracket": "敗者サイド", "stage": "決勝", "winner": "タルト", "loser": "らいせ", "score": "3-2", "mvp": "タルト", "match_code": "#L4-1"},
+
+        # --- 🏆 グランドファイナル ---
+        {"tournament": "過去のプロセカ大会第2回", "bracket": "勝者サイド", "stage": "グランドファイナル", "winner": "yuka.", "loser": "タルト", "score": "3-2", "mvp": "yuka.", "match_code": "#W4-1"},
+    
         
         
     ]
